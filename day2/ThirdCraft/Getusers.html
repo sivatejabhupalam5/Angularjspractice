@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="transflower">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+    <!--Angularjs cdn  -->
+    <script src="Scripts/app.js"></script>
+    <link rel="stylesheet" href="styles/Gettable.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Users</title>
+    
+</head>
+<body ng-app="transflower" ng-controller="loginController">
+    <div class="container">
+        <ol ng-repeat="item in credentials">
+            <li>{{item.emailId}}  {{item.password}}</li>
+        </ol>
+    </div>
+</body>
+</html>
