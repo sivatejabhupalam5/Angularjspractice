@@ -1,0 +1,10 @@
+<div ng-app="myApp" ng-controller="GetProductListController as vm">
+    <h1>Product List</h1>
+    <div class="product" ng-repeat="product in vm.products">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p>Price: {{ product.price | currency }}</p>
+    </div>
+    <div ng-if="vm.loading">Loading products...</div>
+    <div ng-if="vm.error">{{ vm.error }}</div>
+</div>
