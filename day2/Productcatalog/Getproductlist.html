@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html ng-app="productApp">
+<html ng-app="Productcatalog">
 <head>
     <title>Product Catalog</title>
-    <style>
-  
-    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="controllers/productcontroller.js"></script>
     <link rel="stylesheet" href="styles/Getlist.css"/>
    
 </head>
-<body ng-app="Productcatalog"  ng-controller="productController">
+<body   ng-controller="productController">
     <h1>Product Catalog</h1>
     <ul class="product-list">
         <li class="product-item" ng-repeat="product in products">
