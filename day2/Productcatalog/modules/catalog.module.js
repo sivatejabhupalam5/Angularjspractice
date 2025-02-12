@@ -1,0 +1,1 @@
+var Productcatalogmodule=angular.module('Productcatalog', []);
