@@ -1,0 +1,17 @@
+{
+  "name": "angularapplication",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "sivateja bhupalam",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/angular": "^1.8.9",
+    "angular": "^1.8.3",
+    "typescript": "^5.7.3"
+  }
+}

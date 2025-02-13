@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tfl Store</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+    <!--Angularjs cdn  -->
+ 
+    <script src="Scripts/app.js"></script>
+    <script src="../Seconddraft/Scripts/Validateusercreds.js"></script>
+    <link rel="stylesheet" href="../Firstdraft/Styles/loginpage.css">
+</head>
+<body ng-app="transflower" ng-controller="loginController">
+    <nav>
+        <ul>
+            <li><a href="Getusers.html">users</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    <div>
+        <form name="loginForm" ng-submit="onValidate()"> 
+        <table>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" id="emailid" name="email" ng-model="user.emailid" required/></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password" id="password" ng-model="user.password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span id="validation-message" class="validation-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button id="btnlogin">Login</button>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</body>
+</html>
