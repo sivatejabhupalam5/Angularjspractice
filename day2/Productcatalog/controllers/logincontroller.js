@@ -1,4 +1,4 @@
- authmodule.controller('LoginController', function($scope, loginService,$location,$window) {
+ authmodule.controller('LoginController', function($scope, loginService,$window) {
 
     $scope.user = {};
 
@@ -11,8 +11,8 @@ debugger
 
                 // Handle successful login
 
-                document.getElementById('validation-message').innerText = 'Login successful!';
-$location.path('/Getproductlist'); 
+            document.getElementById('validation-message').innerText = 'Login successful!';
+            $window.location.replace('../PRODUCTCATALOG/Getproductlist.html'); // Navigate to the product list page
 
             }, function(error) {
 
